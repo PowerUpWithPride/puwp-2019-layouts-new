@@ -1,0 +1,112 @@
+#charity-logo-container {
+    display: block;
+    width: 495px;
+    height: 120px;
+    right: 0;
+    bottom: 150px;
+}
+
+#event-logo-container {
+    width: 495px;
+    right: 0;
+    bottom: 290px;
+}
+
+#donation-container {
+    width: 495px;
+    height: 126px;
+    line-height: 126px;
+    padding: 10px 0;
+    bottom: 0;
+    right: 0;
+    font-size: 100px;
+}
+
+#timer-label {
+    display: block;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    top: 123px;
+    right: 350px;
+    font-size: 60px;
+}
+
+#timer {
+    width: 235px;
+    height: 80px;
+    line-height: 80px;
+    top: 123px;
+    right: 25px;
+    padding-left: 90px;
+    font-size: 72px;
+    color: var(--timer-color-alt);
+    background-color: var(--timer-background-alt);
+}
+
+#game-details {
+    top: 0;
+    right: 0;
+    width: 495px;
+    height: 730px;
+    background-color: var(--text-background-alt-transparent);
+    padding-top: 350px;
+    z-index: -1;
+}
+
+.game-detail-container {
+    font-size: 30px;
+}
+
+.game-detail-label {
+    color: var(--timer-color);
+    width: 150px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+
+.game-detail {
+    color: var(--text-color-alt);
+}
+
+#game-name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 495px;
+    height: 98px;
+    line-height: 98px;
+    font-size: 48px;
+    text-align: center;
+    color: var(--timer-color);
+    background-color: var(--timer-background);
+}
+
+#runner-details1 {
+    display: block;
+    width: 445px;
+    top: 230px;
+    right: 25px;
+}
+
+#runner-name1 {
+    font-size: 46px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+#pronouns1 {
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+#game-feed1 {
+    display: block;
+    width: 1380px;
+    height: 920px;
+    top: 70px;
+    left: 15px;
+}

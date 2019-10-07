@@ -1,0 +1,148 @@
+#charity-logo-container {
+    display: block;
+    width: 495px;
+    height: 120px;
+    right: 350px;
+    bottom: 100px;
+}
+
+#event-logo-container {
+    width: 495px;
+    right: 350px;
+    bottom: 30px;
+}
+
+#donation-container {
+    width: 350px;
+    height: 100px;
+    line-height: 100px;
+    padding: 15px 0;
+    bottom: 0;
+    right: 0;
+    font-size: 72px;
+}
+
+#timer {
+    width: 280px;
+    height: 130px;
+    line-height: 130px;
+    bottom: 130px;
+    right: 0;
+    font-size: 72px;
+    padding-left: 70px;
+    background-color: var(--timer-background-alt);
+    color: var(--timer-color-alt);
+}
+
+#game-details {
+    bottom: 0;
+    width: 1920px;
+    height: 260px;
+    background-color: var(--text-background-alt-transparent);
+    z-index: -1;
+}
+
+#game-name {
+    color: var(--timer-color);
+    height: 130px;
+    line-height: 130px;
+    font-size: 95px;
+    padding-left: 20px;
+}
+
+.game-detail-container {
+    position: absolute;
+    font-size: 34px;
+}
+
+.game-detail-label {
+    color: var(--timer-color);
+    width: 150px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+
+.game-detail {
+    color: var(--text-color-alt);
+}
+
+#category-container {
+    top: 140px;
+}
+
+#platform-container {
+    top: 190px;
+}
+
+#estimate-container {
+    top: 140px;
+    left: 400px;
+}
+
+#year-container {
+    top: 190px;
+    left: 400px;
+}
+
+.runner-details {
+    width: 450px;
+    text-align: center;
+}
+
+.runner-name {
+    font-size: 46px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.pronouns {
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.finish-time {
+    width: 135px;
+    height: 45px;
+    line-height: 47px;
+    font-size: 40px;
+}
+
+#runner-details1 {
+    display: block;
+    top: 721px;
+    left: 15px;
+}
+
+#finish-time1 {
+    top: -49px;
+    left: 5px;
+}
+
+#runner-details2 {
+    display: block;
+    top: 721px;
+    right: 15px;
+}
+
+#finish-time2 {
+    top: -49px;
+    right: 5px;
+}
+
+.game-feed {
+    width: 930px;
+    height: 696px;
+}
+
+#game-feed1 {
+    display: block;
+    top: 15px;
+    left: 15px;
+}
+
+#game-feed2 {
+    display: block;
+    top: 15px;
+    right: 15px;
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Power Up With Pride Intermission Layout</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/intermission.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+    <script>
+        let globalLayoutInfo = {"code": "4_3-1p"};
+        let offlineMode = false;
+    </script>
+    <script src="js/utils.js"></script>
+    <script src="js/donations.js"></script>
+    <script src="js/intermission/music.js"></script>
+    <script src="js/intermission/run-info.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div id="event-logo-container">
+                <img id="mushy-logo" src="img/mushy.png" alt="Mushy logo">
+                <span id="event-logo-name">PUWP</span>
+                <span id="event-logo-year">2019</span>
+            </div>
+            <div class="schedule">
+                <div class="coming-up-title">Coming Up</div>
+                <div class="coming-up-info">
+                    <div class="coming-up-name"></div>
+                    <div class="coming-up-runner"></div>
+                </div>
+
+                <div class="on-deck-wrapper">
+                    <div class="on-deck-title">On Deck</div>
+                    <div class="on-deck-info">
+                        <div class="on-deck-name1"></div>
+                        <div class="on-deck-runner on-deck-runner1"></div>
+                    </div>
+                    <div class="on-deck-info">
+                        <div class="on-deck-name2"></div>
+                        <div class="on-deck-runner on-deck-runner2"></div>
+                    </div>
+                    <div class="on-deck-info">
+                        <div class="on-deck-name3"></div>
+                        <div class="on-deck-runner on-deck-runner3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="incentives">
+                <div class="incentives-title">UPCOMING INCENTIVES</div>
+                <div class="incentive-wrapper">
+                    <div class="incentive">
+                        <div class="incentive-game incentive-game1"></div>
+                        <div class="incentive-name incentive-name1"></div>
+                        <div class="incentive-footer">
+                            <div class="incentive-progress-full">
+                                <div class="incentive-progress1"></div>
+                            </div>
+                            <div class="incentive-progress-text1"></div>
+                        </div>
+                    </div>
+                    <div class="incentive">
+                        <div class="incentive-game incentive-game2"></div>
+                        <div class="incentive-name incentive-name2"></div>
+                        <div class="incentive-footer">
+                            <div class="incentive-progress-full">
+                                <div class="incentive-progress2"></div>
+                            </div>
+                            <div class="incentive-progress-text2"></div>
+                        </div>
+                    </div>
+                    <div class="incentive">
+                        <div class="incentive-game incentive-game3"></div>
+                        <div class="incentive-name incentive-name3"></div>
+                        <div class="incentive-footer">
+                            <div class="incentive-progress-full">
+                                <div class="incentive-progress3"></div>
+                            </div>
+                            <div class="incentive-progress-text3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bid-wars">
+                <div class="bid-wars-title">UPCOMING BID WARS</div>
+                <div class="bid-wars-wrapper">
+                    <div class="bid-war-game"></div>
+                    <div class="bid-war-name"></div>
+                    <div class="bid-wrapper">
+                        <div class="bid">
+                            <div class="bid-footer">
+                                <div class="bid-progress-full">
+                                    <div class="bid-progress1"></div>
+                                    <div class="bid-name bid-name1"></div>
+                                </div>
+
+                                <div class="bid-progress-text1"></div>
+                            </div>
+                        </div>
+
+                        <div class="bid">
+                            <div class="bid-footer">
+                                <div class="bid-progress-full">
+                                    <div class="bid-progress2"></div>
+                                    <div class="bid-name bid-name2"></div>
+                                </div>
+
+                                <div class="bid-progress-text2"></div>
+                            </div>
+                        </div>
+
+                        <div class="bid">
+                            <div class="bid-footer">
+                                <div class="bid-progress-full">
+                                    <div class="bid-progress3"></div>
+                                    <div class="bid-name bid-name3"></div>
+                                </div>
+
+                                <div class="bid-progress-text3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="charity-logo-container">
+                <img id="charity-logo" src="img/charity-logo.png" alt="Charity logo">
+            </div>
+            <div id="donation-total"></div>
+        </div>
+        <div class="currently-playing">
+            <div>Currently playing:</div>
+            <div id="current-artist" class="currently-playing-info"></div>
+            <div id="current-song" class="currently-playing-info"></div>
+        </div>
+        <div class="music-credits">
+            <div>Music by Dj CUTMAN supported by GameChops music</div>
+            <div class="playlist-link">bit.ly/vglounge</div>
+        </div>
+    </div>
+</body>
+</html>

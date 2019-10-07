@@ -1,0 +1,35 @@
+{
+  "name": "puwp-2019-layouts-new",
+  "version": "1.0.0",
+  "description": "Power Up With Pride 2019 new format layouts using NodeCG + Speedcontrol",
+  "homepage": "https://layout.powerupwithpride.org",
+  "author": "DorkmasterFlek",
+  "dependencies": {
+  },
+  "nodecg": {
+    "compatibleRange": "^1.0.0",
+    "dependencies": [
+      "speedcontrol/nodecg-speedcontrol:>=0.9",
+      "PowerUpWithPride/speedcontrol-layoutswitch:>=1.0",
+      "PowerUpWithPride/speedcontrol-gdqtracker:>=1.0"
+    ],
+    "graphics": [
+      {
+        "file": "game-layout.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "intermission.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "background.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "license": "GPL-3.0"
+}

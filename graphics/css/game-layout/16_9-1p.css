@@ -1,0 +1,89 @@
+#donation-container {
+    width: 205px;
+    height: 100px;
+    padding: 15px 0;
+    bottom: 0;
+    left: 0;
+    font-size: 60px;
+}
+
+#donation-event-name {
+    display: block;
+    font-size: 30px;
+}
+
+#event-logo-container {
+    display: none;
+}
+
+#timer {
+    width: 195px;
+    height: 130px;
+    line-height: 130px;
+    bottom: 0;
+    right: 0;
+    font-size: 60px;
+    padding-left: 10px;
+}
+
+#game-details {
+    width: 1465px;
+    height: 125px;
+    bottom: 0;
+    left: 205px;
+    font-size: 30px;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+
+#game-name {
+    color: var(--timer-color);
+    font-size: 70px;
+}
+
+.game-detail-container {
+    display: inline-block;
+    min-width: 80px;
+    padding-right: 20px;
+}
+
+.game-detail-label {
+    display: none;
+}
+
+#runner-details1 {
+    display: block;
+    height: 130px;
+    width: 500px;
+    bottom: 0;
+    right: 205px;
+    text-align: right;
+}
+
+#runner-name1 {
+    position: absolute;
+    color: var(--timer-color);
+    background-color: transparent;
+    font-size: 70px;
+    width: 100%;
+    right: 45px;
+    bottom: 5px;
+}
+
+#pronouns1 {
+    position: absolute;
+    color: var(--text-color);
+    background-color: transparent;
+    font-size: 30px;
+    width: 100%;
+    right: 45px;
+    top: 10px;
+}
+
+#game-feed1 {
+    display: block;
+    width: 1600px;
+    height: 900px;
+    top: 20px;
+    left: 160px;
+}

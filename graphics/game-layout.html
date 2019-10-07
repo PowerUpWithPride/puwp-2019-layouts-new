@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Power Up With Pride Game Layout</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/game-layout/game-layout-common.css">
+
+    <!--Layout-specific CSS file is updated via the layout change Javascript file below.-->
+    <link id="layout-css-file" rel="stylesheet" href="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flv.js/1.5.0/flv.min.js"></script>
+
+    <script>
+        let globalLayoutInfo = {"code": "4_3-1p"};
+        let offlineMode = false;
+    </script>
+    <script src="js/utils.js"></script>
+    <script src="js/donations.js"></script>
+    <script src="js/game-layout/layout-change.js"></script>
+    <script src="js/game-layout/run-info.js"></script>
+    <script src="js/game-layout/timer.js"></script>
+</head>
+<body>
+
+<!--Charity logo.-->
+<div id="charity-logo-container">
+    <img id="charity-logo" src="img/charity-logo.png" alt="Charity logo">
+</div>
+
+<!--Mushy logo with event name.-->
+<div id="event-logo-container">
+    <img id="mushy-logo" src="img/mushy.png" alt="Mushy logo">
+    <span id="event-logo-name">PUWP</span>
+    <span id="event-logo-year">2019</span>
+</div>
+
+<!--Donation total.-->
+<div id="donation-container">
+    <div id="donation-event-name">PUWP 2019</div>
+    <div id="donation-total"></div>
+</div>
+
+<!--Timer.-->
+<div id="timer-label">Time</div>
+<div id="timer"></div>
+
+<!--Game details.-->
+<div id="game-details">
+    <div id="game-name"></div>
+    <div class="game-detail-container" id="category-container">
+        <span class="game-detail-label" id="category-label">Category:</span>
+        <span class="game-detail" id="category"></span>
+    </div>
+    <div class="game-detail-container" id="platform-container">
+        <span class="game-detail-label" id="platform-label">System:</span>
+        <span class="game-detail" id="platform"></span>
+    </div>
+    <div class="game-detail-container" id="year-container">
+        <span class="game-detail-label" id="year-label">Released:</span>
+        <span class="game-detail" id="year"></span>
+    </div>
+    <div class="game-detail-container" id="estimate-container">
+        <span class="game-detail-label" id="estimate-label">Estimate:</span>
+        <span class="game-detail" id="estimate"></span>
+    </div>
+</div>
+
+<!--Runner details.-->
+<div class="runner-details" id="runner-details1">
+    <div class="runner-name" id="runner-name1"></div>
+    <div class="pronouns" id="pronouns1"></div>
+    <div class="finish-time" id="finish-time1"></div>
+</div>
+<div class="runner-details" id="runner-details2">
+    <div class="runner-name" id="runner-name2"></div>
+    <div class="pronouns" id="pronouns2"></div>
+    <div class="finish-time" id="finish-time2"></div>
+</div>
+<div class="runner-details" id="runner-details3">
+    <div class="runner-name" id="runner-name3"></div>
+    <div class="pronouns" id="pronouns3"></div>
+    <div class="finish-time" id="finish-time3"></div>
+</div>
+<div class="runner-details" id="runner-details4">
+    <div class="runner-name" id="runner-name4"></div>
+    <div class="pronouns" id="pronouns4"></div>
+    <div class="finish-time" id="finish-time4"></div>
+</div>
+
+<!--Game feed containers.-->
+<div class="game-feed" id="game-feed1"></div>
+<div class="game-feed" id="game-feed2"></div>
+<div class="game-feed" id="game-feed3"></div>
+<div class="game-feed" id="game-feed4"></div>
+
+</body>
+</html>

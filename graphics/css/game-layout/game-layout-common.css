@@ -1,0 +1,115 @@
+/* Common definitions for game layouts. */
+
+body {
+    background: url('../../img/background.png') no-repeat;
+}
+
+#charity-logo-container {
+    position: absolute;
+    /*Hide charity logo for most layouts.  Let layouts show if they want.*/
+    display: none;
+    text-align: center;
+}
+
+#charity-logo {
+    width: 90%;
+}
+
+#event-logo-container {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+#mushy-logo {
+    height: 56px;
+    width: 56px;
+}
+
+#event-logo-name {
+    display: inline-block;
+    font-size: 60px;
+    color: var(--timer-color);
+}
+
+#event-logo-year {
+    display: inline-block;
+    font-size: 60px;
+    color: var(--text-color);
+    text-shadow: 0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background), 0 0 3px var(--text-background);
+}
+
+#donation-container {
+    position: absolute;
+    text-align: center;
+    background-color: var(--timer-background);
+    color: var(--timer-color);
+}
+
+#donation-event-name {
+    /*Only for 16:9 1p layout.*/
+    display: none;
+}
+
+#timer-label {
+    position: absolute;
+    text-align: center;
+    background-color: var(--timer-background);
+    color: var(--timer-color);
+    /* Hide timer label for most layouts. */
+    display: none;
+}
+
+#timer {
+    position: absolute;
+    background-color: var(--timer-background);
+    color: var(--timer-color);
+}
+
+#game-details {
+    position: absolute;
+    background-color: var(--game-details-background);
+    color: var(--game-details-color);
+}
+
+.game-detail-label, .game-detail {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.runner-details {
+    position: absolute;
+    /*Hide runner details by default, let individual layouts control which feeds are visible.*/
+    display: none;
+}
+
+.runner-name {
+    color: var(--text-color);
+    background-color: var(--text-background);
+}
+
+.pronouns {
+    color: var(--timer-color);
+    background-color: var(--timer-background);
+    word-wrap: break-word;
+}
+
+.finish-time {
+    position: absolute;
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--text-background);
+    margin: 0;
+}
+
+.game-feed {
+    position: absolute;
+    background-color: var(--game-feed-chroma-key);
+    /*Hide all feeds by default, let individual layouts control which feeds are visible.*/
+    display: none;
+    border-color: var(--game-details-color);
+    border-width: 5px;
+    border-style: solid;
+    /*Make sure feeds are on the bottom underneath the finish times.*/
+    z-index: -1;
+}
