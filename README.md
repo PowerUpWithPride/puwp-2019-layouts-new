@@ -28,7 +28,7 @@ Install the Speedcontrol bundle, our extra Speedcontrol functionality, and this 
 nodecg install speedcontrol/nodecg-speedcontrol
 nodecg install PowerUpWithPride/speedcontrol-layoutswitch
 nodecg install PowerUpWithPride/speedcontrol-gdqtracker
-nodecg install PowerUpWithPride/puwp-2019-layouts
+nodecg install PowerUpWithPride/puwp-2019-layouts-new
 ```
 
 This will create a `bundles` subfolder inside your new directory that contains git repositories of these two bundles.  You can now make whatever changes and tweaks you like from that location.
