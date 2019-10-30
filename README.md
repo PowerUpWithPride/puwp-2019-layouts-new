@@ -7,12 +7,12 @@ This is a [NodeCG](http://github.com/nodecg/nodecg) graphics bundle.  It is inte
 ### 1. Install Node.js
 Instructions on the Node.js site here: https://nodejs.org/en/
 
-**NOTE:** At time of this writing, the current LTS version is 10.x and the NodeCG developers recommend sticking with the LTS releases for production.  It should work with the current stable version as well, which is 11.x currently, but you'll have to test this yourself.
+**NOTE:** At time of this writing, the current LTS version is 12.x and the NodeCG developers recommend sticking with the LTS releases for production.  It should work with the current stable version as well, which is 13.x currently, but you'll have to test this yourself.
 
-### 2. Install NodeCG modules
+### 2. Install NodeCG
 Follow the quick start guide here: https://nodecg.com/tutorial-3_quick-start.html
 
-Do steps 1-3 to install the `bower` and `nodecg-cli` packages.
+Do steps 1-2 to install the `nodecg-cli` package.
 
 ### 3. Make a working directory and install NodeCG
 Create a fresh directory, and run the NodeCG setup in it:
