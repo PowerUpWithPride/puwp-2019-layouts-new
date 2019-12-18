@@ -96,6 +96,8 @@ body {
 
 .finish-time {
     position: absolute;
+    /*Use z-index to hide finish times by default.  Individual layouts can show them.*/
+    z-index: -1;
     text-align: center;
     background-color: var(--text-color);
     color: var(--text-background);

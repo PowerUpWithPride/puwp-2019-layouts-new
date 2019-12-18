@@ -76,7 +76,7 @@ function getProgressBarColor(current, max){
 function getRunnersFromRunData(runData) {
     let currentTeamsData = [];
     runData.teams.forEach(team => {
-        let teamData = {players: []};
+        let teamData = {players: [], id: team.id};
         team.players.forEach(player => {teamData.players.push(createPlayerData(player));});
         currentTeamsData.push(teamData);
     });
@@ -100,6 +100,8 @@ function createPlayerData(player) {
     name = name[0].trim();
 
     return {
+        id: player.id,
+        teamID: player.teamID,
         name: name,
         pronouns: pronouns,
         twitch: twitchUsername,

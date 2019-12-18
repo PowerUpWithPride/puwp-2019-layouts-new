@@ -111,6 +111,7 @@
 }
 
 .finish-time {
+    z-index: auto;
     width: 135px;
     height: 45px;
     line-height: 47px;

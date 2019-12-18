@@ -45,7 +45,7 @@ $(() => {
             if (timer.value.state === 'running') {
                 let missedTime = Date.now() - timer.value.timestamp;
                 let timeOffset = timer.value.milliseconds + missedTime;
-                updateTimer({time:msToTime(timeOffset)});
+                updateTimer({time: msToTime(timeOffset), teamFinishTimes: null});
             }
         }
 
@@ -60,24 +60,25 @@ $(() => {
             }
             timer.addClass('timer_'+newVal.state);
             timer.html(time);
+
+            // Check for finished times.
+            let finishedTimes = newVal.teamFinishTimes;
+            if (finishedTimes !== undefined && finishedTimes !== null) {
+                updateFinishedTimes(finishedTimes);
+            }
         }
 
-        // This is the finished times for the current runners.
-        let finishedTimers = nodecg.Replicant('finishedTimers', speedcontrolBundle);
-        finishedTimers.on('change', (newVal, oldVal) => {
-            if (newVal) {
-                updateFinishedTimes(newVal);
-            }
-        });
-
-        // Sets the finished times for runners.
+        // Set the finished times for runners based on team IDs.
         function updateFinishedTimes(finishedTimes) {
             $('.finish-time').text("").hide();
-            for (let time of finishedTimes) {
-                // Runner index is zero-based.
-                let i = Number.parseInt(time.index) + 1;
-                $('#finish-time' + i).html(time.time).show();
-            }
+
+            // Update finish time in each runner detail block based on team ID.
+            $(".runner-details").each((index, detail) => {
+                let finishedTime = finishedTimes[$(detail).data('teamID')];
+                if (finishedTime) {
+                    $(detail).find('.finish-time').html(finishedTime.time).show();
+                }
+            });
         }
     }
 });

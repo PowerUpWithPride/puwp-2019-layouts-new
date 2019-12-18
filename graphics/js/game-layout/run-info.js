@@ -1,7 +1,6 @@
 // Main run info update functionality.
 'use strict';
 
-// TODO: This is garbage, do better.
 function FixSize(selector) {
 
     setTimeout(function(){
@@ -14,10 +13,6 @@ function FixSize(selector) {
         let text_org = $(selector + ":visible").html();
         let text_update = '<span style="white-space:nowrap;">' + text_org + '</span>';
         $(selector + ":visible").html(text_update);
-
-        let childWidth = $(selector + ":visible").children().width();
-
-        // console.log(childWidth + " " + divWidth);
 
         while ($(selector + ":visible").children().width() > divWidth){
             // console.log($(selector + ":visible").children().width() + " " + divWidth);
@@ -72,14 +67,11 @@ $(() => {
 
         name4.text("iBazly");
         pronouns4.text("He/They");
-
-        // fixPronounWrapping(globalLayoutInfo);
     }
 
     function loadFromSpeedControl() {
         // The bundle name where all the run information is pulled from.
         const speedcontrolBundle = 'nodecg-speedcontrol';
-        const layoutBundle = 'speedcontrol-layoutswitch';
 
         // JQuery selectors.
         let gameTitle = $('#game-name');
@@ -96,8 +88,6 @@ $(() => {
                 updateSceneFields(newVal);
         });
 
-        let currentLayout = nodecg.Replicant('currentGameLayout', layoutBundle);
-
         // Sets information on the pages for the run.
         function updateSceneFields(runData) {
             let currentTeamsData = getRunnersFromRunData(runData);
@@ -111,21 +101,19 @@ $(() => {
 
             // Set each player names and pronouns.
             $(".runner-name").add(".pronouns").text('');
+            $(".runner-details").data('teamID', '');
             let i = 0;
             for (let team of currentTeamsData) {
                 for (let player of team.players) {
                     i += 1;
-                    let name = $("#runner-name" + i);
-                    let pronouns = $("#pronouns" + i);
-                    name.text(player.name);
-                    pronouns.text(player.pronouns);
-                    // FixSize('#runner-name' + i);
+                    $("#runner-name" + i).text(player.name);
+                    $("#pronouns" + i).text(player.pronouns);
+                    $("#runner-details" + i).data('teamID', player.teamID);
                 }
             }
 
             // Fix pronoun wrapping for the current layout if needed.
             FixSize('#game-name');
-            // fixPronounWrapping(currentLayout.value);
         }
     }
 });
